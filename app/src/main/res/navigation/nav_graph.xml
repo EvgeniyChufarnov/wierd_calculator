@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.weirdcalculator.ui.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_calculatorFragment"
+            app:destination="@id/calculatorFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_formFragment"
+            app:destination="@id/formFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.example.weirdcalculator.ui.CalculatorFragment"
+        android:label="CalculatorFragment" />
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.weirdcalculator.ui.CalendarFragment"
+        android:label="CalendarFragment" />
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="com.example.weirdcalculator.ui.FormFragment"
+        android:label="FormFragment" />
+</navigation>

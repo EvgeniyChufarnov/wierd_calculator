@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/b_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculator"
+        style="@style/calculator_style"/>
+
+    <Button
+        android:id="@+id/b_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Form"
+        style="@style/calculator_style"/>
+
+    <Button
+        android:id="@+id/b_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Calendar"
+        style="@style/calculator_style"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/night_theme"
+        style="@style/calculator_style"/>
+
+</LinearLayout>
